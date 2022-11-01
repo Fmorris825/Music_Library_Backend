@@ -34,19 +34,19 @@ Adds the new song to the database.
 Returns a 201 status code.
 Responds with the newly created song object. -->
 
-(5 points) As a developer, I want to create a PUT endpoint that does the following things:  
-Accepts a value from the request’s URL (The id of the song to be updated).  
-Accepts a body object from the request in the form of a Song model.  
-Finds the song in the Music table and updates that song with the properties that were sent in the request’s body.  
-Returns a 200 status code.  
-Responds with the newly updated song object.
+<!-- (5 points) As a developer, I want to create a PUT endpoint that does the following things:
+Accepts a value from the request’s URL (The id of the song to be updated).
+Accepts a body object from the request in the form of a Song model.
+Finds the song in the Music table and updates that song with the properties that were sent in the request’s body.
+Returns a 200 status code.
+Responds with the newly updated song object. -->
 
-(5 points) As a developer, I want to create a DELETE endpoint that does the following things:  
-Accepts a value from the request’s URL.  
+<!-- (5 points) As a developer, I want to create a DELETE endpoint that does the following things:
+Accepts a value from the request’s URL.
 Deletes the object from the database.
-Returns a 204 (NO CONTENT) status code.
+Returns a 204 (NO CONTENT) status code. -->
 
-(5 points) As a developer, I want to use Postman to make a POST, PUT, DELETE, and both GET requests (get by id and get all) request to my REST web API, save it to a collection, and then export it as a JSON from Postman.
+<!-- (5 points) As a developer, I want to use Postman to make a POST, PUT, DELETE, and both GET requests (get by id and get all) request to my REST web API, save it to a collection, and then export it as a JSON from Postman. -->
 
 Bonus Stories
 (5 points) As a developer, I want to add the ability to “like” a song through the web API and have the number of likes saved in the database with the song.
