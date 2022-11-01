@@ -1,8 +1,8 @@
-from django.urls import path
+from django.urls import path,include
 from . import views
 
-# urlpatterns = [
-#     path('',views.),
-#     path('<int:pk>/', views.),
+urlpatterns = [
+    path('api/music/',include('music.urls')),
+    path('<int:pk>/', views.),
 
-# ]
+]
