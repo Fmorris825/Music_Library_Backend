@@ -23,18 +23,15 @@ def music_library(request):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def get_song_by_id(request, pk):
-    product = get_object_or_404(Music, pk=pk)
-    # product = Product.objects.get(pk=pk)
+    music = get_object_or_404(Music, pk=pk)
     if request.method == 'GET':
-        serializer = MusicSerializers(product)
-        # serializer.is_valid(raise_exception=True)
-        # serializer.save()
+        serializer = MusicSerializers(music)
         return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
     elif request.method == 'PUT':
-        serializer = MusicSerializers(product, data=request.data)
+        serializer = MusicSerializers(music, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
     elif request.method == 'DELETE':
-        product.delete()
+        music.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
